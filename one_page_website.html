@@ -1,0 +1,137 @@
+          <!DOCTYPE HTML>
+          <html lang="en">
+          <head>
+          <link rel="stylesheet" type="text/css" href="one_page_website.css">
+          <title>Dead Earth</title>
+          </head>
+          <body>
+          <!--NAV--> 
+          <div>
+          <div>
+          <ul>
+          <a href="#home"id="link"><li>HOME</li></a>
+          <a href="#gallery"><li>GALLERY</li></a>
+          <a href="#video"><li>VIDEO</li></a>
+          <a href="#newsletter"><li>NEWSLETTER</li></a>
+          </ul>
+          </div>
+          <!--END NAV-->
+
+          <!--HOME-->
+          <div id="home">
+          <div>
+          <div>
+          <Span>Dead Earth</span>
+          </div>
+          </div>
+          </div>
+          <!--END HOME-->
+
+          <!--GALLERY-->
+          <section>
+          <div id="gallery">
+          <h1>Gallery</h1>
+          <div>
+          <!-- Images used to open the lightbox -->
+          <div class="row">
+          <div class="column">
+          <img src="Dead.jpeg" width="350px" height="150px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+          <img src="Earth.jpg" width="350px" height="150px"  onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          </div>
+
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+          <div class="mySlides">
+          <div class="numbertext">1 / 2</div>
+          <img src="Dead.jpeg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+          <div class="numbertext">2 / 2</div>
+          <img src="Earth.jpg" style="width:100%">
+          </div>
+
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+          <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="column">
+          <img class="demo" src="Dead.jpeg"  onclick="currentSlide(1)" alt="Earth#1">
+          </div>
+
+          <div class="column">
+          <img class="demo" src="Earth.jpg"  onclick="currentSlide(2)" alt="#Earth#2">
+          </div>
+
+
+          </div>
+          </div>
+
+          </div>
+          </section>
+          <!--END GALLERY-->
+
+          <!--VIDEO-->
+          <section>
+          <div id="video">
+          <h1>Video</h1>
+          <div>
+
+          <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IrVmNg7i9e4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/bU1QPtOZQZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          </div>
+          </section>
+          <!--END VIDEO-->
+
+          <!--NEWSLETTER-->
+          <Section>
+          <div id="newsletter">
+          <div>
+          <h1>Send In</h1>
+          <div>
+          <h2><span>Want to be consider crazy!</span>
+          <br />Join our newsletter today!</h2>
+          <p>Please provide the following.</p>
+          <div>
+          <form action="" method="post">
+          <input class="ramp" type="text" value="First Name">
+          <input class="ramp" type="text" value="Last Name">
+          <input class="ramp" type="text" value="Email Address">
+          <input class="ramp" type="text" value="Phone Number">
+          <div class="terms">Terms and Conditions</label>
+          </div>
+          <div>
+          <input type="Submit" value="Submit">
+          </div>
+          </form>
+          </div>
+          </div>
+          </div>
+          </div>
+          </section>
+          <!--END NEWSLETTER-->
+
+          <!--FOOTER-->
+          <div>
+          Dead Earth &nbsp;|&nbsp; &copy; 1999
+          <script src="one_page_website.js"></script>
+          </div>
+          <!--END FOOTER-->
+          </body>
+          </html>
